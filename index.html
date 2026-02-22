@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudMarket – Premium Products, Delivered</title>
+  <meta name="description" content="CloudMarket is your destination for premium electronics, sports gear, and home essentials. Shop the best deals online." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">Cloud<span>Market</span></div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">Cloud<span>Market</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart-btn">
+          🛒 Cart <span class="cart-count" style="display:none">0</span>
+        </a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html" class="btn btn-primary">🛒 Cart <span class="cart-count" style="display:none">0</span></a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-dot"></div>
+          <span class="hero-eyebrow-text">New Collection 2025</span>
+        </div>
+        <h1 class="hero-title">
+          Shop Smarter,<br>
+          Live <span class="accent">Better</span>
+        </h1>
+        <p class="hero-desc">
+          Discover thousands of premium products curated for quality and value. From cutting-edge electronics to everyday essentials — all in one trusted marketplace.
+        </p>
+        <div class="hero-actions">
+          <a href="shop.html" class="btn btn-primary" style="font-size:15px; padding:15px 32px">
+            Explore Products →
+          </a>
+          <a href="about.html" class="btn btn-outline" style="color:#fff; border-color:rgba(255,255,255,0.25); font-size:15px; padding:15px 32px">
+            Our Story
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">50K+</div>
+            <div class="hero-stat-label">Happy Customers</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">1,200+</div>
+            <div class="hero-stat-label">Products</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">4.9★</div>
+            <div class="hero-stat-label">Average Rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-product-card hero-card-side1">
+            <div class="hero-card-img">⌚</div>
+            <div class="hero-card-label">ZenFrame Watch</div>
+            <div class="hero-card-price">$199.99</div>
+          </div>
+          <div class="hero-product-card hero-card-main">
+            <div class="hero-card-img">🎧</div>
+            <div class="hero-card-label">AuraWave Pro</div>
+            <div class="hero-card-price">$249.99</div>
+          </div>
+          <div class="hero-product-card hero-card-side2">
+            <div class="hero-card-img">👟</div>
+            <div class="hero-card-label">PeakFlow Shoes</div>
+            <div class="hero-card-price">$129.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-tag">✦ Trending Now</div>
+          <h2 class="section-title">Featured <span>Products</span></h2>
+          <p class="section-subtitle" style="margin-top:12px">Handpicked selection of our most popular items this season.</p>
+        </div>
+        <a href="shop.html" class="btn btn-outline">View All Products →</a>
+      </div>
+      <!-- Products rendered by JS -->
+      <div class="products-grid" id="featured-products">
+        <!-- Skeleton placeholders shown while loading -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES STRIP -->
+  <section style="padding: 20px 0 60px; background: var(--off-white);">
+    <div class="container">
+      <div style="display:flex; gap:16px; overflow-x:auto; padding:4px 0; scrollbar-width:none;">
+        <a href="shop.html?cat=electronics" style="flex-shrink:0; display:flex; align-items:center; gap:12px; background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:16px 28px; transition:var(--transition); text-decoration:none; color:var(--navy); font-family:var(--font-display); font-size:14px; font-weight:600;"
+          onmouseover="this.style.borderColor='var(--blue)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='var(--shadow-md)'"
+          onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform=''; this.style.boxShadow=''">
+          <span style="font-size:24px">💻</span> Electronics
+        </a>
+        <a href="shop.html?cat=sports" style="flex-shrink:0; display:flex; align-items:center; gap:12px; background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:16px 28px; transition:var(--transition); text-decoration:none; color:var(--navy); font-family:var(--font-display); font-size:14px; font-weight:600;"
+          onmouseover="this.style.borderColor='var(--blue)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='var(--shadow-md)'"
+          onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform=''; this.style.boxShadow=''">
+          <span style="font-size:24px">🏃</span> Sports & Fitness
+        </a>
+        <a href="shop.html?cat=home" style="flex-shrink:0; display:flex; align-items:center; gap:12px; background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:16px 28px; transition:var(--transition); text-decoration:none; color:var(--navy); font-family:var(--font-display); font-size:14px; font-weight:600;"
+          onmouseover="this.style.borderColor='var(--blue)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='var(--shadow-md)'"
+          onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform=''; this.style.boxShadow=''">
+          <span style="font-size:24px">🏠</span> Home & Living
+        </a>
+        <a href="shop.html" style="flex-shrink:0; display:flex; align-items:center; gap:12px; background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:16px 28px; transition:var(--transition); text-decoration:none; color:var(--navy); font-family:var(--font-display); font-size:14px; font-weight:600;"
+          onmouseover="this.style.borderColor='var(--blue)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='var(--shadow-md)'"
+          onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform=''; this.style.boxShadow=''">
+          <span style="font-size:24px">🎁</span> All Products
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="container">
+      <div style="text-align:center; max-width:560px; margin:0 auto 56px;">
+        <div class="section-tag">✦ Why CloudMarket</div>
+        <h2 class="section-title">Built on <span>Trust</span></h2>
+        <p class="section-subtitle" style="margin:12px auto 0">We've redefined online shopping with a commitment to quality, service, and community.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🚀</div>
+          <div class="benefit-title">Lightning Fast Delivery</div>
+          <p class="benefit-desc">Same-day dispatch on orders placed before 2PM. Free standard shipping on all orders over $75.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-icon">🔒</div>
+          <div class="benefit-title">Secure Payments</div>
+          <p class="benefit-desc">Bank-grade 256-bit SSL encryption protects every transaction. All major cards and digital wallets accepted.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-icon">🔄</div>
+          <div class="benefit-title">60-Day Returns</div>
+          <p class="benefit-desc">Not happy? Return any item within 60 days for a full refund, no questions asked.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-3">
+          <div class="benefit-icon">🎯</div>
+          <div class="benefit-title">Quality Guaranteed</div>
+          <p class="benefit-desc">Every product is vetted by our team. Only the best 5% of items make it to CloudMarket shelves.</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">💬</div>
+          <div class="benefit-title">24/7 Support</div>
+          <p class="benefit-desc">Real humans ready to help, day or night. Chat, email, or call — we're always here for you.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-icon">🌍</div>
+          <div class="benefit-title">Worldwide Shipping</div>
+          <p class="benefit-desc">We ship to 120+ countries with full tracking and transparent customs duties.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <section style="padding: 60px 24px; background: var(--gradient); position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background: radial-gradient(ellipse 60% 100% at 50% 50%, rgba(59,130,246,0.2) 0%, transparent 70%);"></div>
+    <div style="max-width:900px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:40px; align-items:center; position:relative; z-index:1;" class="reveal">
+      <div>
+        <div class="section-tag" style="background:rgba(6,182,212,0.15);">🔥 Limited Time Offer</div>
+        <h2 style="font-family:var(--font-display); font-size:clamp(24px,3.5vw,38px); font-weight:800; color:var(--white); margin:12px 0 16px; line-height:1.2;">
+          Up to <span style="background:var(--gradient-accent); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">40% Off</span> on Selected Items
+        </h2>
+        <p style="color:rgba(255,255,255,0.65); font-size:16px; max-width:460px; line-height:1.7;">
+          Don't miss out on our biggest sale of the year. Thousands of products marked down — shop before they're gone!
+        </p>
+      </div>
+      <div>
+        <a href="shop.html" class="btn btn-white" style="font-size:15px; padding:16px 36px; white-space:nowrap;">Shop the Sale →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="section-tag">📬 Stay Updated</div>
+        <h2 class="newsletter-title">Join 50,000+ Smart Shoppers</h2>
+        <p class="newsletter-desc">Get exclusive deals, new arrivals, and insider offers delivered to your inbox weekly.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <div class="newsletter-msg" id="newsletter-msg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:24px;">Cloud<span>Market</span></a>
+          <p>Your trusted destination for premium products at great prices. We believe everyone deserves access to quality goods.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-btn" aria-label="Facebook">f</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Shop</div>
+          <ul class="footer-links">
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html">Electronics</a></li>
+            <li><a href="shop.html">Sports & Fitness</a></li>
+            <li><a href="shop.html">Home & Living</a></li>
+            <li><a href="shop.html">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Support</div>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CloudMarket Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
