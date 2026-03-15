@@ -12,7 +12,7 @@ const PRODUCTS = [
     category: "electronics",
     price: 249.99,
     originalPrice: 329.99,
-    emoji: "🎧",
+    image: "images/headphones-background-illustration-ai-generative-free-photo.jpg",
     rating: 4.8,
     reviews: 312,
     badge: "sale",
